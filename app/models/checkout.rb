@@ -3,4 +3,5 @@ class Checkout < ActiveRecord::Base
   validates :available, inclusion: { in: [true, false] }
   validates_presence_of :available
   validates_presence_of :book_id
+  belongs_to :book
 end
