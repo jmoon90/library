@@ -6,4 +6,5 @@ describe Checkout do
   it { should_not have_valid(:book_id).when('',nil,'a+z') }
 
   it { should validate_presence_of(:available) }
+  #it { should have_valid(:available).when(true, false) }
 end
