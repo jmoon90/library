@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :checkout do
-    book_id 1
+    sequence(:book_id) { |n| "#{n}" }
     available false
   end
 end
